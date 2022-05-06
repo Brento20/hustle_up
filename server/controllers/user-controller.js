@@ -28,24 +28,24 @@ module.exports = {
   async login({ body }, res) {
     const user = await User.findOne({ $or: [{ username: body.username }, { email: body.email }] });
     if (!user) {
-      return res.status(400).json({ message: "Can't find this user" });
+      return res.status(400).json({ message: "Error Logging In" });
     }
 
     const correctPw = await user.isCorrectPassword(body.password);
 
     if (!correctPw) {
-      return res.status(400).json({ message: 'Wrong password!' });
+      return res.status(400).json({ message: 'Error Logging In' });
     }
     const token = signToken(user);
     res.json({ token, user });
   },
 
-  // async saveBook({ user, body }, res) {
+  // async saveEquipment({ user, body }, res) {
   //   console.log(user);
   //   try {
   //     const updatedUser = await User.findOneAndUpdate(
   //       { _id: user._id },
-  //       { $addToSet: { savedBooks: body } },
+  //       { $addToSet: { hiredEquipment: body } },
   //       { new: true, runValidators: true }
   //     );
   //     return res.json(updatedUser);
@@ -58,7 +58,7 @@ module.exports = {
   // async deleteBook({ user, params }, res) {
   //   const updatedUser = await User.findOneAndUpdate(
   //     { _id: user._id },
-  //     { $pull: { savedBooks: { bookId: params.bookId } } },
+  //     { $pull: { hiredEquipment: { bookId: params.bookId } } },
   //     { new: true }
   //   );
   //   if (!updatedUser) {

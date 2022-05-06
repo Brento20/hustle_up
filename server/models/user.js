@@ -9,23 +9,26 @@ const userSchema = new Schema(
         type: String,
         required: true,
         unique: true,
+        immutable: true,
     },
     email: {
         type: String,
         required: true,
+        lowercase: true,
         unique: true,
-        match: [/.+@.+\..+/, 'Must use a valid email address'],
+        match: [/.+@.+\..+/, 'Please use a valid email address'],
     },
     password: {
         type: String,
         required: true,
+        minlength: 8,
     },
     equipmentHire: [hireSchema],
     },
 
     {
         toJSON: {
-        virtuals: true,
+        virtual: true,
         },
     }
 );
@@ -46,8 +49,8 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 
-userSchema.virtual('bookCount').get(function () {
-    return this.savedBooks.length;
+userSchema.virtual('equipment').get(function () {
+    return this.hiredEquipment.length;
 });
 
 const User = model('User', userSchema);
