@@ -1,0 +1,50 @@
+[
+    {
+        "product": "CANON EOS C500 MARK II",
+        "description": "Employing the DV7 high-speed image processing platform, the camera enables 5.9K/60p, 4K/60p and 2K/120p recording for the highest resolution. In-camera 5.9K Cinema RAW Light Recording is also possible.",
+        "image": "",
+        "category": "CAMERA",
+        "brand": "CANON",
+        "compatibility": 
+            {
+                "film": "false",
+                "portable": "true",
+                "digital": "true",
+                "4K": "true",
+                "6K": "true",
+                "8k": "false",
+            }
+    },
+    {
+        "product": "ARRI ALEXA MINI LF",
+        "description": "The ALEXA Mini LF has a higher data rate as the ALEXA Mini, since it has a sensor which is twice as big as the Mini's sensor. There are two steps you can take to reduce that data rate. First, shoot LF 16:9 (3840 x 2160) or LF 2.39:1 (4448 x 1856) instead of LF Open Gate (4448 x 3096).",
+        "image": "",
+        "category": "CAMERA",
+        "brand": "ARRI",
+        "compatibility": 
+            {
+                "film": "false",
+                "portable": "true",
+                "digital": "true",
+                "4K": "false",
+                "6K": "false",
+                "8k": "false",
+            }
+    },
+    {
+        "product": "APUTURE LS1200D PRO LIGHT STORM",
+        "description": "LS 1S use aero-aluminum to achieve the best balance performance of heat, density, strength, workability, etc. So that the function parameters can get a perfectshow. Delicate design and elaborate production combine for a robust but exquisite housing that can fulfill low forward heat of the fixture.",
+        "image": "",
+        "category": "LIGHTS",
+        "brand": "APUTURE",
+        "compatibility": 
+            {
+                "film": "true",
+                "portable": "true",
+                "digital": "true",
+                "4K": "false",
+                "6K": "false",
+                "8k": "false",
+            }
+    },
+]
