@@ -7,12 +7,12 @@
         "brand": "CANON",
         "compatibility": 
             {
-                "film": "false",
-                "portable": "true",
-                "digital": "true",
-                "4K": "true",
-                "6K": "true",
-                "8k": "false",
+                "film": false,
+                "portable": true,
+                "digital": true,
+                "4K": true,
+                "6K": true,
+                "8k": false,
             }
     },
     {
@@ -24,11 +24,11 @@
         "compatibility": 
             {
                 "film": "false",
-                "portable": "true",
-                "digital": "true",
-                "4K": "false",
-                "6K": "false",
-                "8k": "false",
+                "portable": true,
+                "digital": true,
+                "4K": false,
+                "6K": false,
+                "8k": false,
             }
     },
     {
@@ -39,12 +39,12 @@
         "brand": "APUTURE",
         "compatibility": 
             {
-                "film": "true",
-                "portable": "true",
-                "digital": "true",
-                "4K": "false",
-                "6K": "false",
-                "8k": "false",
+                "film": true,
+                "portable": true,
+                "digital": true,
+                "4K": false,
+                "6K": false,
+                "8k": false,
             }
     },
 ]
