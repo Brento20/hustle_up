@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import BodyContainer from "./components/BodyContainer";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 
 
 
@@ -10,7 +10,6 @@ const App = () => {
         <div>
         <Header />
         <BodyContainer />
-        <Footer />
         </div>
     );
 };

@@ -1,0 +1,17 @@
+html{
+    background: black;
+    font-family: sans-serif;
+    background-image: url('../img/background1.jpeg');
+}
+
+.bodyContainer {
+    width: 100%;
+    background-image: url('../img/background1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
