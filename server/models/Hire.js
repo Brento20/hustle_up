@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 
 const hireSchema = new Schema({
-  owner: {String},
+  owner: String,
 
   product: {
     type: String,
@@ -14,37 +14,27 @@ const hireSchema = new Schema({
     required: true,
   },
 
-  image: {String},
+  image: String,
 
   category: {
     type: String,
     required: true,
   },
 
-  brand: {
-    type: String,
-  },
+  brand: String,
 
-  compatibility: [{ 
-      film: {
-        type: Boolean,
-      },
-      portable: {
-        type: Boolean,
-      },
-      digital: {
-        type: Boolean,
-      },
-      four_K: {
-        type: Boolean,
-      },
-      six_K: {
-        type: Boolean,
-      },
-      eight_k: {
-        type: Boolean,
-      }
-  }]
+  film: Boolean,
+
+  portable: Boolean,
+
+  digital: Boolean,
+
+  fourK: Boolean,
+
+  sixK: Boolean,
+
+  eightK: Boolean,
+
 });
 
 const Hire = model('Hire', hireSchema);

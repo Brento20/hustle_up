@@ -19,13 +19,13 @@ const userSchema = new Schema({
         required: true,
         minlength: 5,
     },
-//    equipmentHire: [hireSchema],
-    },
+// //    equipmentHire: [hireSchema],
+//     },
 
-    {
-        toJSON: {
-        virtual: true,
-        },
+//     {
+//         toJSON: {
+//         virtual: true,
+//         },
     }
 );
 

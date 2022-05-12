@@ -10,8 +10,8 @@ db.once('open', async () => {
     await User.deleteMany({});
     await Hire.deleteMany({});
 
-    await Hire.insert(equipmentSeeds);
-    await User.insert(profileSeeds);
+    await Hire.insertMany(equipmentSeeds);
+    await User.insertMany(profileSeeds);
 
     console.log('You have planted all the seeds 🌱');
     process.exit(0);
