@@ -1,4 +1,4 @@
 const User = require('./User');
 const Hire = require('./Hire');
 
-module.exports = { User };
+module.exports = { User, Hire };

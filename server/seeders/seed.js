@@ -1,6 +1,6 @@
 const db = require('../config/connection');
-const { User } = require('../models/User.js');
-const { Hire } = require('../models/Hire.js')
+const { User, Hire } = require('../models');
+
 const profileSeeds = require('./profileSeeds.json');
 const equipmentSeeds = require('./equipmentSeeds.json');
 

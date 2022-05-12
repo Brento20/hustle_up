@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
+import Support from './pages/Support';
 import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Equipment from './pages/Equipment';
+import Partners from './pages/Partners';
 
 
 export default function BodyContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
+        if (currentPage === 'Support') {
+            return <Support />;
     }
         if (currentPage === 'About') {
             return <About />;
     }
-        if (currentPage === 'Projects') {
-            return <Projects />;
+        if (currentPage === 'Equipment') {
+            return <Equipment />;
     }
-    return <Contact />;
+    return <Partners />;
 };
 
 const handlePageChange = (page) => setCurrentPage(page);

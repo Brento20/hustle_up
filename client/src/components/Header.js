@@ -1,8 +1,10 @@
 import React from 'react';
+import Menu from './pages/menu';
 
 const Header = () => {
     return (
 <div>    
+    <Menu />
     <div style={{
         width: "100%",
         padding: "2.5em",
@@ -23,8 +25,7 @@ const Header = () => {
         right: "10%",
         fontWeight: "300",
 
-    }}>
-        <p>LOGIN</p>
+    }}> 
     </div>
 </div>
     )
