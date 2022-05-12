@@ -1,26 +1,31 @@
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 
 const hireSchema = new Schema({
-  owner: String,
+  owner: {String},
+
   product: {
     type: String,
     required: true,
   },
+
   description: {
     type: String,
     required: true,
   },
-  image: String,
+
+  image: {String},
+
   category: {
     type: String,
     required: true,
   },
+
   brand: {
     type: String,
   },
-  compatibility: {
-    
+
+  compatibility: [{ 
       film: {
         type: Boolean,
       },
@@ -39,7 +44,9 @@ const hireSchema = new Schema({
       eight_k: {
         type: Boolean,
       }
-  }
+  }]
 });
 
-module.exports = hireSchema;
+const Hire = model('Hire', hireSchema);
+
+module.exports = Hire;

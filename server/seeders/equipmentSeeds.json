@@ -6,14 +6,14 @@
         "category": "CAMERA",
         "brand": "CANON",
         "compatibility": 
-            {
+            [{
                 "film": false,
                 "portable": true,
                 "digital": true,
                 "4K": true,
                 "6K": true,
                 "8k": false
-            }
+            }]
     },
     {
         "product": "ARRI ALEXA MINI LF",
@@ -22,14 +22,14 @@
         "category": "CAMERA",
         "brand": "ARRI",
         "compatibility": 
-            {
+            [{
                 "film": "false",
                 "portable": true,
                 "digital": true,
                 "4K": false,
                 "6K": false,
                 "8k": false
-            }
+            }]
     },
     {
         "product": "APUTURE LS1200D PRO LIGHT STORM",
@@ -38,13 +38,13 @@
         "category": "LIGHTS",
         "brand": "APUTURE",
         "compatibility": 
-            {
+            [{
                 "film": true,
                 "portable": true,
                 "digital": true,
                 "4K": false,
                 "6K": false,
                 "8k": false
-            }
+            }]
     }
 ]

@@ -1,29 +1,25 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const hireSchema = require('./Hire');
-
-const userSchema = new Schema(
-    {
+const userSchema = new Schema({
     username: {
         type: String,
         required: true,
         unique: true,
-        immutable: true,
+        trim: true,
     },
     email: {
         type: String,
         required: true,
-        lowercase: true,
         unique: true,
-        match: [/.+@.+\..+/, 'Please use a valid email address'],
+        match: [/.+@.+\..+/, 'Must match an email address!'],
     },
     password: {
         type: String,
         required: true,
-        minlength: 8,
+        minlength: 5,
     },
-    equipmentHire: [hireSchema],
+//    equipmentHire: [hireSchema],
     },
 
     {
@@ -49,9 +45,9 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 
-userSchema.virtual('equipment').get(function () {
-    return this.hiredEquipment.length;
-});
+// userSchema.virtual('equipment').get(function () {
+//     return this.hiredEquipment.length;
+// });
 
 const User = model('User', userSchema);
 
