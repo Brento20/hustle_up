@@ -12,7 +12,7 @@
                 "digital": true,
                 "4K": true,
                 "6K": true,
-                "8k": false,
+                "8k": false
             }
     },
     {
@@ -28,7 +28,7 @@
                 "digital": true,
                 "4K": false,
                 "6K": false,
-                "8k": false,
+                "8k": false
             }
     },
     {
@@ -44,7 +44,7 @@
                 "digital": true,
                 "4K": false,
                 "6K": false,
-                "8k": false,
+                "8k": false
             }
-    },
+    }
 ]

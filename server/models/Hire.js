@@ -2,11 +2,7 @@ const { Schema } = require('mongoose');
 
 
 const hireSchema = new Schema({
-  owner: [
-    {
-      type: String,
-    },
-  ],
+  owner: String,
   product: {
     type: String,
     required: true,
@@ -15,9 +11,7 @@ const hireSchema = new Schema({
     type: String,
     required: true,
   },
-  image: {
-    type: String,
-  },
+  image: String,
   category: {
     type: String,
     required: true,
